@@ -253,7 +253,7 @@ function restartGame() {
     collectedCount = 0;
     completionMessage.innerText = ''; // Clear completion message
     restartButton.style.display = 'none'; // Hide restart button
-    instructions.innerText = 'Use W/A/S/D to move, Q/E to move up/down, and move the mouse to look around.';
+    instructions.innerText = 'Use W/A/S/D to move, Q/E to move up/down, and click on the canvas to look around.';
     updateTimerDisplay('Hit the red cube to start the timer!');
     player = new Player(); // Reset player position
     resetLevel(); // Randomize positions of cube and spheres

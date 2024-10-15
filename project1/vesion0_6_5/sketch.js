@@ -31,7 +31,8 @@ function setup() {
     resetLevel(); // Randomize positions of the cube and spheres
 
     timer = timeLimit;
-    updateTimerDisplay(timer);
+    // updateTimerDisplay(timer);
+    updateTimerDisplay('Hit the red cube to start the game!');
     remainingSpheresDisplay.innerText = `Remaining Spheres: ${collectibles.length}`; // Initialize remaining spheres
 }
 
@@ -254,7 +255,7 @@ function restartGame() {
     completionMessage.innerText = ''; // Clear completion message
     restartButton.style.display = 'none'; // Hide restart button
     instructions.innerText = 'Use W/A/S/D to move, Q/E to move up/down, and click on the canvas to look around.';
-    updateTimerDisplay('Hit the red cube to start the timer!');
+    updateTimerDisplay('Hit the red cube to start the game!');
     player = new Player(); // Reset player position
     resetLevel(); // Randomize positions of cube and spheres
 }
